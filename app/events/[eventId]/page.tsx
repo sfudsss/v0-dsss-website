@@ -7,6 +7,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar, MapPin, Users, Clock, Trophy, ArrowLeft, ExternalLink } from "lucide-react"
 import { getEventById, getAllEvents } from "@/lib/events-data"
 
+// Force dynamic rendering so production will serve event pages
+// even if generateStaticParams didn't include all slugs at build time.
+export const dynamic = "force-dynamic"
+export const dynamicParams = true
+
 export async function generateStaticParams() {
   const events = getAllEvents()
 
