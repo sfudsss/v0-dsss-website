@@ -100,12 +100,21 @@ export default async function EventDetailPage({ params }: { params: Promise<{ ev
 
             {isUpcoming && event.registrationLink && (
               <div className="mt-8">
-                <Button asChild size="lg" className="w-full sm:w-auto">
-                  <Link href={event.registrationLink}>
-                    Register Now
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                {event.registrationLink.startsWith("http") ? (
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <a href={event.registrationLink} target="_blank" rel="noopener noreferrer">
+                      Register Now
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                ) : (
+                  <Button asChild size="lg" className="w-full sm:w-auto">
+                    <Link href={event.registrationLink}>
+                      Register Now
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                )}
               </div>
             )}
           </div>
@@ -303,11 +312,18 @@ export default async function EventDetailPage({ params }: { params: Promise<{ ev
             <p className="mx-auto mb-6 max-w-2xl text-lg opacity-90 leading-relaxed">
               Register now to secure your spot. Spaces are limited and registration closes soon!
             </p>
-            {event.registrationLink && (
-              <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Link href={event.registrationLink}>Register for {event.title}</Link>
-              </Button>
-            )}
+            {event.registrationLink &&
+              (event.registrationLink.startsWith("http") ? (
+                <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                  <a href={event.registrationLink} target="_blank" rel="noopener noreferrer">
+                    Register for {event.title}
+                  </a>
+                </Button>
+              ) : (
+                <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                  <Link href={event.registrationLink}>Register for {event.title}</Link>
+                </Button>
+              ))}
           </div>
         </section>
       )}

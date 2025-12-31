@@ -53,7 +53,7 @@ export const events: Event[] = [
     capacity: "100 participants",
     status: "registration-open",
     category: "Hackathon",
-    registrationLink: "/events/hackml-2026/register",
+    registrationLink: "https://v0-hackml-portal.vercel.app/",
     details: {
       eligibility: "Open to all SFU students and students from other universities. All skill levels welcome.",
       teamSize: "Teams of 1-4 people. You can register individually and find teammates at the event.",
