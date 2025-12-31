@@ -51,24 +51,40 @@ export default function RegisterPage() {
     const supabase = createClient()
 
     try {
-      const { error } = await supabase.from("participants").insert({
+      console.log("[v0] Starting registration submission for event:", params.eventId)
+      console.log("[v0] Form data:", formData)
+
+      const insertData = {
         event_id: params.eventId as string,
         first_name: formData.firstName,
         last_name: formData.lastName,
         email: formData.email,
         student_id: formData.studentNumber,
-        discord_username: formData.discordUsername,
         program: formData.major,
         year_level: formData.year,
         how_heard_about: formData.howHeard.join(", "),
-        kaggle_username: formData.kaggleUsername,
         dietary_restrictions: formData.dietaryRestrictions,
         shirt_size: formData.tshirtSize,
+        additional_info: JSON.stringify({
+          discord_username: formData.discordUsername,
+          kaggle_username: formData.kaggleUsername,
+        }),
         registration_status: "confirmed",
-      })
+      }
 
-      if (error) throw error
+      console.log("[v0] Inserting data:", insertData)
 
+      const { data, error } = await supabase.from("participants").insert(insertData).select()
+
+      console.log("[v0] Supabase response - data:", data)
+      console.log("[v0] Supabase response - error:", error)
+
+      if (error) {
+        console.error("[v0] Supabase error details:", JSON.stringify(error, null, 2))
+        throw error
+      }
+
+      console.log("[v0] Registration successful!")
       setIsSuccess(true)
 
       toast({
