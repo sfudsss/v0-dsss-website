@@ -47,7 +47,7 @@ export const events: Event[] = [
       "HackML 2026 is the first machine-learning-focused hackathon, where teams attempt to construct the best ML-models for each given question.",
     longDescription:
       "Join us for an intensive 24-hour hackathon focused on machine learning and artificial intelligence. Whether you're a beginner or an experienced ML practitioner, HackML offers opportunities to learn, collaborate, and innovate. Work in teams of up to 4 people to develop ML-powered applications, receive mentorship from industry professionals, attend technical workshops, and compete for exciting prizes.",
-    date: "January 18-19, 2026",
+    date: "January 31st, 2026",
     time: "8:30 AM - 8:30 PM",
     location: "SFU Burnaby Campus - AQ Building",
     capacity: "125 participants",
@@ -161,7 +161,7 @@ export const events: Event[] = [
       "A panel of data science professionals share their experiences and advice for students seeking internships and full-time roles in the data science field.",
     date: "June 2025",
     location: "In-person at SFU Burnaby Campus's SUB Ballroom",
-    status: "registration-closed",
+    status: "completed",
     category: "Panel",
   },
 ]
