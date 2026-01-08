@@ -50,7 +50,7 @@ export const events: Event[] = [
     date: "January 18-19, 2026",
     time: "9:00 AM - 9:00 AM (24 hours)",
     location: "SFU Burnaby Campus - AQ Building",
-    capacity: "100 participants",
+    capacity: "125 participants",
     status: "registration-open",
     category: "Hackathon",
     registrationLink: "https://portal-hackml.vercel.app/",
