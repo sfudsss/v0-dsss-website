@@ -44,32 +44,31 @@ export const events: Event[] = [
     title: "HackML 2026",
     tagline: "DSSS Machine Learning Competition",
     description:
-      "HackML 2026 is the first machine-learning-focused hackathon, where teams attempt to construct the best ML-models for each given question.",
+      "HackML 2026 is the first machine-learning-focused hackathon at SFU, where teams attempt to construct the best ML-models for each given question.",
     longDescription:
-      "Join us for an intensive 24-hour hackathon focused on machine learning and artificial intelligence. Whether you're a beginner or an experienced ML practitioner, HackML offers opportunities to learn, collaborate, and innovate. Work in teams of up to 4 people to develop ML-powered applications, receive mentorship from industry professionals, attend technical workshops, and compete for exciting prizes.",
+      "Join us for an intensive 12-hour hackathon focused on machine learning and artificial intelligence. Whether you're a beginner or an experienced ML practitioner, HackML offers opportunities to learn, collaborate, and innovate. Work in teams of up to 4 people to develop ML-powered applications, receive mentorship from industry professionals, and compete for small prizes.",
     date: "January 31st, 2026",
     time: "8:30 AM - 8:30 PM",
-    location: "SFU Burnaby Campus - AQ Building",
+    location: "SFU Burnaby Campus - SUB Ballroom",
     capacity: "125 participants",
     status: "registration-open",
     category: "Hackathon",
-    registrationLink: "https://v0-hackml-portal.vercel.app/",
+    registrationLink: "https://portal-hackml.vercel.app/",
     details: {
       eligibility: "Open to all SFU students and students from other universities. All skill levels welcome.",
-      teamSize: "Teams of 1-4 people. You can register individually and find teammates at the event.",
-      prizes: "Over $5,000 in prizes including cash awards, tech gadgets, and software subscriptions.",
-      food: "Meals, snacks, and beverages provided throughout the event.",
+      teamSize: "Teams of 1-4 people. Register individually, and use the team code to add members to your team. Team formation will be done through Discord.",
+      prizes: "$200 in small prizes for winning teams.",
+      food: "Meals and beverages provided throughout the event.",
     },
     schedule: [
-      { time: "8:30 AM", title: "Registration", description: "Participant check-in" },
+      { time: "8:30 AM", title: "Check-ins", description: "Participant check-in" },
       { time: "9:00 AM", title: "Opening Ceremony", description: "Welcome, agenda, rules, and team formation" },
-      { time: "9:30 AM", title: "Hacking Begins", description: "Start building your projects" },
-      { time: "12:30 PM", title: "Lunch", description: "Banh-Mi Sandwiches from Pho99" },
-      { time: "1:30 PM", title: "Hacking Continues", description: "Final push for participants - submissions due by 5:30pm" },
-      { time: "5:30 PM", title: "Dinner", description: "Pizza from Dominos" },
-      { time: "6:15 PM", title: "Presentations", description: "Presentations will be held in BLU9402 in 2 waves - check Discord for details" },
-      { time: "7:15 PM", title: "Judging", description: "Judging results + Round 2 Presentations" },
-      { time: "8:45 PM", title: "Closing Ceremony", description: "Prizes awarded + Judges gifts + Group photo" }
+      { time: "9:30 AM", title: "Competition Begins", description: "Datasets and problems released for teams" },
+      { time: "12:00 PM", title: "Lunch", description: "Sushi from T&T - Limit 8 per person (until further notice)" },
+      { time: "3:00 PM", title: "Mid-point Check-ins", description: "Brief progress update and Q&A session with competition organizers" },
+      { time: "6:00 PM", title: "Final Submission Deadline", description: "All model submissions must be completed and submitted through Kaggle by this time" },
+      { time: "6:15 PM", title: "Dinner + Networking", description: "Pizza from Dominoes, and open networking with industry professionals and DSSS executives." },
+      { time: "8:15 PM", title: "Result + Prizes + Closing Ceremony", description: "Prizes awarded + Judges gifts + Group photo" }
     ],
     faq: [
       {
