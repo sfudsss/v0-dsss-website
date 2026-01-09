@@ -93,22 +93,22 @@ export const events: Event[] = [
     ],
   },
   {
-    id: "hackml-2025",
-    title: "HackML 2025",
+    id: "DataJam-2025",
+    title: "DataJam 2025",
     tagline: "Our Inaugural ML Hackathon",
-    description: "The first-ever HackML hackathon with 80+ participants and 15 amazing project submissions.",
+    description: "The first-ever DataJam hackathon with 80+ participants and 15 amazing project submissions.",
     longDescription:
-      "HackML 2025 was our inaugural machine learning hackathon that brought together over 80 students from SFU and surrounding universities. Participants worked on diverse ML projects ranging from image classification to natural language processing.",
-    date: "January 20-21, 2025",
-    time: "24 hours",
+      "DataJam 2025 was our inaugural machine learning hackathon that brought together over 80 students from SFU and surrounding universities. Participants worked on diverse ML projects ranging from image classification to natural language processing.",
+    date: "October 21, 2025",
+    time: "12 hours",
     location: "SFU Burnaby Campus",
     status: "completed",
     category: "Hackathon",
     highlights: [
       "80+ participants from 5 universities",
       "15 project submissions",
-      "8 industry mentors",
-      "$3,000 in prizes awarded",
+      "4 industry mentors",
+      "$400 in prizes awarded",
     ],
     winners: [
       {
@@ -132,23 +132,13 @@ export const events: Event[] = [
     ],
   },
   {
-    id: "deep-learning-workshop-2026",
-    title: "Deep Learning Workshop Series",
-    description:
-      "A comprehensive 6-week workshop series covering neural networks, CNNs, RNNs, and transformer architectures. Perfect for beginners and intermediate learners.",
-    date: "March - April 2026",
-    location: "Hybrid (In-person & Online)",
-    status: "registration-closed",
-    category: "Workshop",
-  },
-  {
     id: "industry-panel-spring-2026",
     title: "Data Science Career Panel",
     description:
       "Hear from data science professionals about their career journeys, industry insights, and practical advice for students entering the field.",
     date: "February 2026",
     location: "TBA",
-    status: "registration-closed",
+    status: "completed",
     category: "Panel",
   },
 ]
